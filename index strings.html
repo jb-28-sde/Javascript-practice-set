@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 3a. Create the text 'My name is: ' as a string.****
+        
+        3b. Create your name as a string (for example: 'Himanshu').
+        
+        3c. Using concatenation, add the 2 strings from 3a and 3b together
+        to create the text: 'My name is: ___' (replace with your name).
+        
+        3d. At a restaurant, you order 1 coffee ($5) and 1 bagel ($3). Using math,
+        calculate the total cost, and using concatenation, create the text:
+        'Total cost: $' (replace with the total you calculated).
+        
+        3e. Do the same thing as 3d, but use a template string and interpolation.
+        
+        3f. Display the text from 3e in a popup using alert(...);
+        
+        3g. You Order 1 coffee (₹5.99) and 1 tea (₹2.95). Using math, calculate the total cost, using concatenation create the text.
+        `Total cost: $____'` (hint: calculate in paise to avoid inaccuracies)
+        
+        3h. Do the same thing as 3g but use a template string and interpolation.
+        
+        3i. Display the text from 3h in a popup.
+        
+        3j. Using a multi-line string, create the text from 3h and add a line of text underneath:
+        `Thank you, come again!.` Display both line in a popup. -->
+        <script>
+            // 3a
+            console.log('My name is')
+             My name is;
+            // 3b
+            console.log('Jaibhim Bangrey')
+           Jaibhim Bangrey  
+            // 3c
+            console.log('My name is :' + ' Jaibhim Bangrey')
+            My name is : Jaibhim Bangrey
+            // 3d
+           'total cost :('+'$'+(5+3) +')'
+            'Total cost :($8)'
+            // 3e
+            `Total cost :$${5+3}`
+            'Total cost :$8'
+            // 3f
+            alert(`Total cost :$${5+3}`)
+            // 3g
+            'Total cost:$(' +(599+295)/100 +')'
+           'Total cost:$(8.94)'
+           // 3h
+           `Total cost:₹${(599+295)/100}`
+           'Total cost:₹8.94'
+           // 3i
+           alert(`Total cost:₹${(599+295)/100}`)
+           // 3j
+           console.log("Thank you,\n come again")
+           Thank you,
+           come again'
+           // 3k
+           alert(`Thank you, \ncome again!`)
+
+        </script>
+</body>
+</html>

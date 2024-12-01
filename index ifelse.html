@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <!-- 6a. Create a variable called ‘hour’ and save the current hour of the day
+(use 24-hour format and save it as a number between 0 and 23).
+If hour is between 6 and 12, display ‘Good morning!’ in the console
+
+- If hour is between 13 and 17, display ‘Good afternoon!’ in the console
+- If hour is between 18 and 20, display ‘Good evening!’ in the console
+- Otherwise, display ‘Good night!’ in the console
+
+6b. Continuing from 6a, try changing the value in the ‘hour’ variable to
+make it display different messages.
+
+6c. Continuing from 6a, create a variable called ‘name’ and save your
+name inside (as a string). Update the if-statement to display your
+name in each message. For example: ‘Good morning ${name}"
+
+6d. Imagine an amusement park that has a discount for children (6 years
+and younger) or seniors (65 years and older) .
+« Create a variable ‘age’ and save a person's age inside.
+« Create an if-statement that checks if the person qualifies for a
+discount. If they do, display 'Discount' in the console. Otherwise,
+display 'No discount' in the console.
+Note: try to use the || operator in your solution.
+
+- Try changing the ‘age’ variable to display different messages.
+
+6e. Continuing from exercise 6d, let's say the discount is only available
+if it is not a holiday. Create a variable: const isHoliday = true;
+« Update the code so that in order to get a discount, people must
+meet the age requirement and it is also not a holiday.
+« Note: && has a higher priority than || so you may need to use
+brackets () to control which code gets done first.
+« Try changing the value of isHoliday to display different messages.
+
+We'll create a coin-flip game (create 1 HTML file for exercises 6f - 6j):
+6f. Generate a random number with Math.random(). Save it in a variable.
+
+6g. Create an if-statement and check:
+
+- If the number is less than 0.5, then display ‘heads’ in the console.
+- Else display ‘tails’ in the console.
+
+6h. Instead of displaying ‘heads’ or ‘tails’ in the console, save the result
+in a variable called ‘result’.
+
+6i. Let's say we're trying to guess the result. Create a variable called
+‘guess’ and save your guess (‘heads’ or ‘tails’). |
+
+- If your guess matches the result, display ‘You win!" in the console
+- If your guess does not match the result, display ‘You lose!
+
+6j. (Challenge) Instead of using if-statements in the previous exercises,
+try switching them into ternary operators (condition ? A: B).
+
+Challenge Exercises
+Setup: we'll improve the Cart Quantity project. First, make a copy of the
+project from exercise 5k (if you didn’t do 5k, check the solutions).
+
+ --> 
+
+<script>
+    /*6a
+    let hour =15
+        if(hour<=6 && hour>12){
+            console.log("Good Morning")}
+          else if(hour<13 && hour>17){
+            console.log("Good Afternoon")
+          } else if(hour<18 && hour>20){
+            console.log("Good Evening")
+          } else{
+            console.log("Good Night")}
+            //6b
+            hour change in between = 24 hour format
+            //6c
+             hour =13;
+          const name = 'Jai'
+        if(hour<=6 && hour>12){
+            console.log(`Good Morning:${name}`);}
+          else if(hour<13 && hour>17){
+            console.log(`Good Morning:${name}`);
+          } else if(hour<18 && hour>20){
+            console.log(`Good Morning:${name}`);
+          } else{
+            console.log(`Good Morning:${name}`);}
+            //6d
+            let age =30
+            if(age<=6 || age > 65){
+                console.log("You are eligible for discount")
+            }else{
+                console.log("You are not eligible for discount")} 
+            //6e
+            let age =30
+            let isHoliday ='True'
+            if((age<=6 || age > 65) && !isHoliday){
+                console.log("You are eligible for discount")
+            }else{
+                console.log("You are not eligible for discount")
+            //6f
+            let randomNumber = Math.random()
+            console.log(randonNumber)// cheking the random number in console
+            //6g
+            let randomNumber = Math.random()
+            if(randomNumber<0.5){
+                console.log('heads')}
+                else{
+                    console.log('tails')
+                //6h
+                let randomNumber = Math.random()
+            let result = '';
+            if(randomNumber<0.5){
+                console.log('heads')}
+                else{
+                    console.log('tails')
+                }
+                //6i
+                let guess = 'heads'
+                if(guess === result){
+                    console.log('You win!')
+                }else{
+                    console.log('You lose!')
+                }
+                //6j
+                guess === result ? console.log('You win!') : console.log('You lose!')
+            */
+</script>
+</body>
+
+</html>

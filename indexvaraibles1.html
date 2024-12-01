@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- 5h. In the Cart Quantity project, add 2 more buttons ‘+4’ and ‘+5’, which
+increase the quantity by 4 and 5 when you click them. Try using +=
+
+5i. In the Cart Quantity project, add a button ‘Remove from cart’, which
+decreases the cart quantity by 1.
+
+5j. Add 2 buttons ‘-2' and ‘-3’, which decrease the quantity by 2 and 3.
+5k. Use the shortcuts -- and -= in 5i and 5j.
+6k. Let's say the cart has a maximum quantity of 10. Before updating the
+quantity, check if the quantity will be greater than 10:
+If it will, display a popup saying ‘The cart is full’ and don’t update
+the quantity.
+
+- Otherwise, update the quantity and console.log() it as usual.
+
+6l. In exercises 5i - 5k, we created the ‘Remove from cart’, ‘-2’, and ‘-3’
+buttons. Before updating the quantity, check if it will go below 0:
+If it will, create a popup saying ‘Not enough items in the cart’
+and don't update the quantity.
+Otherwise, update the quantity and console.log() it as usual. -->
+    <p>Cart Quantity</p>
+    <button onclick="
+    if(cartQuantity > 10) {
+        alert('The cart is full');
+    }
+cartQuantity = cartQuantity + 1;
+console.log(`cart Quantity :${cartQuantity}`);
+">Add to Cart</button>
+    <button onclick="
+cartQuantity = cartQuantity + 2;
+console.log(`cart Quantity :${cartQuantity}`);
+">Add 2 items</button>
+    <button onclick="
+cartQuantity = cartQuantity + 3;
+console.log(`cart Quantity :${cartQuantity}`);
+">Add 3 items</button>
+    <button onclick="
+cartQuantity += 4;
+console.log(`cart Quantity :${cartQuantity}`);
+">Add 4 items</button>
+    <button onclick="
+cartQuantity += 5;
+console.log(`cart Quantity :${cartQuantity}`)
+"> Add 5 items</button>
+    <button onclick="
+cartQuantity = 0;
+console.log(`cartQuantity: ${cartQuantity}`)
+">Remove from cart</button>
+<button onclick="
+if(cartQuantity<0){
+    alert('Not enough items in the cart');
+}
+cartQuantity -= 2 
+console.log(`cartQuantity: ${cartQuantity}`)
+">-2</button>
+<button onclick="
+cartQuantity -= 3;
+console.log(`cartQuantity: ${cartQuantity}`)
+">-3</button>
+<script>
+    let cartQuantity = 0;
+</script>
+</body>
+
+</html>
