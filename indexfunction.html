@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    // 7a.(Question) Create a function called ‘greet’ that displays the message ‘Hello!
+    // in the console. Call / run this function a few times using: greet();
+
+    //7a (Solution)
+    // function greet(){
+    //    console.log("Hello!");
+    // }
+    // greet();
+    // greet();
+    // greet();
+
+  //7b.(Question) Continuing from 7a, add a parameter called ‘name’ to the ‘greet’
+// function and display the message: ‘Hello ${name}"’
+// Call the function a few times with different names: greet('Himanshu’);
+
+//7b(Solution)
+// function greet(name){
+//     console.log(`hello ${name}`);
+// }
+// greet("jai");
+// greet("Rahul");
+// greet("Rohan");
+
+// //7c.(Question) . Try calling greet() without a name (it will display ‘Hello undefined?).
+// Modify the function so that if ‘name’ is undefined, it will display
+// ‘Hi there! instead.
+// (Hint: use an if-statement. Since undefined is a falsy value, you
+// can use: if (Iname) { ... } to check if ‘name’ is undefined).
+
+//7c(Solution)
+// function greet(name){
+//     console.log(`hello ${name}`);
+
+//     if(name){
+//         console.log(`hello ${name}`);
+//     }
+//     else{
+//         console.log("Hi there!");
+//     }
+// }
+//  greet();
+//  greet('jai');
+
+//7d.(Question)  Create a function ‘convertToFahrenheit(celsius)’ that takes a number
+// in degrees Celsius and returns a number in degrees Fahrenheit.
+// . Formula: Fahrenheit = (Celsius *9 / 5) + 32
+
+//7d(Solution)
+// function convertToFahrenheit(celsius){
+//     return((celsius * 9 / 5) + 32);
+// }
+// console.log(convertToFahrenheit(25));=>77F
+
+//7e. Create a function ‘convertToCelsius(fahrenheit)’ that takes a number
+// in degrees Fahrenheit and returns a number in degrees Celsius.
+
+// - Formula: Celsius = (Fahrenheit - 32) *5/9
+
+//7e(Solution)
+// function convertToCelcius(fahrenheit){
+//     return((fahrenheit - 32) *5/9);
+// }
+//  console.log(convertToCelcius(86));=> 30C
+
+//7f. (Question) Create a function ‘convertTemperature(degrees, unit)’ that takes a
+// number and a unit ('C' or 'F'), and converts it into the other unit.
+
+// - convertTemperature(25, 'C') => "77F'
+// - convertTemperature(86, 'F') => '30C’
+// Note: return a string, and try to reuse the functions from 7d and 7e.
+
+ //7f(Solution)
+// function convertTemperature(degrees, unit){
+//     if(unit === 'C'){
+//         return`${((degrees * 9 / 5) + 32)}F`;
+//     }
+//     else if(unit === 'F'){
+//         return`${((degrees - 32) *5/9)}C`;
+//     }
+// }console.log(convertTemperature(25, 'C'));=> 77F;
+// console.log(convertTemperature(86, 'F'));=> 30C;
+
+ //7g. (Question) 7g. Create a function convertLength(length, from, to) thal takes a
+// number and a unit ('km' or 'miles') and converts the length to another
+// unit ('km' or 'miles'). Note: 1 mile = 1.6 km (approximately).
+
+// convertLength(50, 'miles', 'km') =>'80 km’
+// convertLength(32, 'km', 'miles') => '20 miles’
+
+// - convertLength(50, 'km', 'km') =>'50 km'
+
+ //7g(Solution)
+// function convertLength(length, from, to){
+//     if(from === 'miles' && to === 'km'){
+//         return `${length * 1.6} ${to}`;
+//     }
+//     else if(to === 'miles' && from === 'km'){
+//         return `${length / 1.6} ${to} `;
+//     }
+//     else if(from===to){
+//         return `${length} ${to}`;
+//     }
+// }
+// console.log(convertLength(50, 'miles', 'km')); => '80 km';
+// console.log(convertLength(32, 'km', 'miles'));  =>'20 miles';
+// console.log(convertLength(50, 'km', 'km')); =>'50 km';
+
+//7h. (Question) Update convertLength to support converting between km, miles,
+// and also feet. Note: 1 mile = 5280 ft, 1 km = 3281 ft (approximately).
+// convertLength(5, 'miles', 'km') => '8 km'
+// convertLength(5, 'miles', 'ft') => '26400 ft'
+// convertLength(5, 'km/, 'ft') => '16405 ft'
+
+ //7h (Solution)
+//  function convertLength(length, from, to){
+//     if(from === 'miles' && to === 'km'){
+//          return `${length * 1.6} ${to}`;
+//     } else if(from === 'miles' && to === 'ft'){
+//         return `${length * 5280} ${to}`;
+//     } else if(from === 'km' && to === 'ft'){
+//         return `${length * 3281} ${to}`;
+//     }
+//     else if(from===to){
+//         return `${length} ${to}`;
+//     }
+//     }
+//      console.log(convertLength(5, 'miles', 'km')); =>'8 km';
+//     console.log(convertLength(5, 'miles', 'ft')); => '26400 ft';
+//     console.log(convertLength(5, 'km', 'ft')); => '16405 ft';
+    
+ //7i. (Question) Update convertLength so that if you give it an invalid unit, it will
+// return "Invalid unit: ${unit}".
+// convertLength(5, 'lbs', 'Ibs') => 'Invalid unit: Ibs'
+
+ //7i(Solution)
+// function convertLength(length, from, to) {
+//       if (from === 'miles' && to === 'km') {
+//         return `${length * 1.6} ${to}`;
+//       } else if (to === 'miles' && from === 'km') {
+//         return `${length / 1.6} ${to}`;
+//       } else if (from === to) {
+//         return `${length} ${to}`;
+//       } else {
+//         return `Invalid unit: ${to}`;
+//       }
+//     }
+//     console.log(console.log(convertLength(50, 'miles', 'km')) );
+//     console.log(console.log(convertLength(32, 'km', 'miles')));
+//     console.log(console.log(convertLength(50, 'km', 'km')));
+//     console.log(console.log(convertLength(5, 'lbs', 'Ibs')) );
+    
+    
+    
+    
+    
+
+ 
+
+    </script>
+
+</script>
+</body>
+</html>
