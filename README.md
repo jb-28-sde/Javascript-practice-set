@@ -1,7 +1,3 @@
-Certainly! Here’s an updated version of the JavaScript practice questions document, with clear headings and more structured content for ease of reading:
-
----
-
 # JavaScript Practice Questions for Beginners to Intermediate Programmers
 
 This repository contains a series of JavaScript practice questions designed for individuals at the beginner to intermediate level. Each section emphasizes fundamental concepts and practices essential for mastering JavaScript. The following topics are covered:
@@ -65,7 +61,10 @@ This repository contains a series of JavaScript practice questions designed for 
 **Practice Questions:**
 - Write a function that takes two parameters and returns their product.
 - Create a function that takes an array of numbers and returns the maximum number found in that array.
+## object in javascript
+---Objects let you group related data together and split code into logical pieces. In JavaScript, we have primitive values and reference values. Number, Boolean, Null, Undefined, String, and Symbol are primitive values, while objects like DOM nodes, Arrays, and so on are reference values.
 
----
+**Practice Questions**
+-- write a object in two types and get their values.
 
 These practice questions will help solidify your understanding of foundational JavaScript concepts while building your coding skills. Happy coding!
