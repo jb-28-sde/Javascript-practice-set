@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 9a.(Question) Create a <button>9a</button>. Use document.querySelector('button’)
+        // to get the button from the page, and then display it in the console.
+        //9a.(Solution)
+        //<button>9a</button>
+        //  let btn = document.querySelector('button')
+        //  console.log(btn);
+
+//         9b.(Question) Continuing from 9a, create another button <button>9b</button>
+// below. Using JavaScript, change the text in the second button to
+// ‘9b done!’ (hint: add a class and use .querySelector).
+//9b.(Solution)
+// <button class="btn">9a</button>
+// let sbtn = document.querySelector('.btn')
+//  .innerHTML = '9b done!';
+//  console.log(sbtn);
+ 
+// 9c.(Question) Create 2 buttons ‘heads’ and ‘tails’, and a
+// paragraph (< p >< /p >) underneath. When
+// clicking the ‘heads’ button, display
+// ‘You chose: heads’ in the paragraph. When
+// the ‘tails’ button, display ‘You chose: tails’.
+//9c.(Solution)
+// <button onclick="
+//         document.querySelector('.choice')
+//         .innerHTML ='You choose : Heads'">Heads</button>
+//     <button onclick="
+//     document.querySelector('.choice')
+//     .innerHTML ='You choose : Tails'">Tails</button>
+//     <p class="choice"></p>
+// 9d.(Question) Create a text box (< input >) and a submit button. When clicking
+// ‘Submit’, display "Your name is: $ {text}’ on the page (${text} = the text
+// inside the text box") (hint: use .value to get the text inside an < input >). 
+//9d.(Solution)
+// <div> Your name is : <span class="display"></span></div>
+//    <input 
+//    type="text"
+//    class="input-box"> 
+//    <button onclick="
+//    let inputValue =document.querySelector('.input-box').value;
+//    let displayName = document.querySelector('.display').innerHTML = inputValue;
+//    ">submit</button>
+
+// 9e.(Question) Modify exercise 9d so that when you press ‘Enter’ in the < input>, it
+// will also display the same message on the page (hint: use
+// onkeydown and the event object).
+//9e.(Solution)
+// <div> Your name is : <span class="display"></span></div>
+//    <input 
+//    type="text"
+//    class="input-box"
+//     onkeydown="displayNameOnKeyDown(event)"> //yaha pe new button add kiye hai onkeydown as per question  or usko function me add kr diye function niche bvnaya h event.key wala
+//    <button onclick="
+//   displayName()
+//    ">submit</button>
+//    <script>
+//     function displayName(){
+//         let inputValue =document.querySelector('.input-box').value;
+//         let displayName = document.querySelector('.display').innerHTML = inputValue;
+//     }
+//     function displayNameOnKeyDown(){
+//         if (event.key === 'Enter'){
+//             displayName()
+//         }
+//     }
+// 9f. Continuing from 9e, create a function to reuse the code (if you
+// already did this, skip this exercise).
+//9f.(Solution)
+//function displayName(){
+//         let inputValue =document.querySelector('.input-box').value;
+//         let displayName = document.querySelector('.display').innerHTML = inputValue;
+//function displayNameOnKeyDown(){
+//         if (event.key === 'Enter'){
+//             displayName()
+//         }
+
+    </script>
+</body>
+</html>
