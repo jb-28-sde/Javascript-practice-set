@@ -61,10 +61,19 @@ This repository contains a series of JavaScript practice questions designed for 
 **Practice Questions:**
 - Write a function that takes two parameters and returns their product.
 - Create a function that takes an array of numbers and returns the maximum number found in that array.
-## object in javascript
----Objects let you group related data together and split code into logical pieces. In JavaScript, we have primitive values and reference values. Number, Boolean, Null, Undefined, String, and Symbol are primitive values, while objects like DOM nodes, Arrays, and so on are reference values.
 
-**Practice Questions**
--- write a object in two types and get their values.
+## 9. Objects in JavaScript
+- Learn how to group related data together using objects, which allow the use of both primitive and reference values.
+
+**Practice Questions:**
+- Write two types of objects and retrieve their values.
+- Create a function that adds a new property to an object and logs the updated object.
+
+## 10. Introduction to the DOM in JavaScript
+- Understand the Document Object Model (DOM), which represents the structure of a web page and allows JavaScript to interact with HTML and XML documents for dynamic content updates.
+
+**Practice Questions:**
+- Write a JavaScript program to change the text of an HTML element using the DOM.
+- Create a simple webpage that allows users to add items to a list dynamically via DOM manipulation.
 
 These practice questions will help solidify your understanding of foundational JavaScript concepts while building your coding skills. Happy coding!
