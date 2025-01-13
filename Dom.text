@@ -1,0 +1,337 @@
+10a.(Question)Create the following buttons using HTML and CSS. The styles don't have
+to be exact (just use your best judgment).
+10a.(solution)
+HTMLPart
+
+ <div>
+        <button>Add To Your Cart</button>
+        <p>rgb (255,216,20)</p>
+    </div>
+    
+    CSS Part
+
+    *{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(185, 184, 184);
+}
+button{
+    background-color: dodgerblue;
+    border-radius: 28px;
+    padding: 15px;
+    margin: 20px;
+    display: block;
+    font-size: medium;
+    font-weight: 600;
+}
+p{
+    background-color: black;
+    color: whitesmoke;
+    padding: 13px;
+    margin: 27px;
+    display: inline;
+    font-size: large;
+}
+-------------/-----------
+10b.(Question) Uber buttons
+10b.(solution)
+
+HTML Part
+ <div>
+        <button >Request now</button>
+        <button >Schedule for later</button>
+    </div>
+    <p>rgb (230,230,230)</p>
+
+    CSS Part
+
+    *{
+    margin: 0;
+    padding: 0;
+}
+button{
+    background-color: rgb(159, 159, 159);
+    color: whitesmoke;
+    border-radius: 11px;
+    margin: 5px;
+    padding: 7px;
+    font-size: medium;
+    font-weight: 600;
+    display: inline;
+}
+
+p{
+    background-color: black;
+    color: white;
+    font-size: large;
+    font-weight: 700;
+    padding: 4px 80px;
+    display: inline;
+}
+---------/--------
+10c.(Question) classList has another method, classList.contains('class-name’),
+which checks if an element has a class.
+. Create a button: <button class="js-button">Test</button>
+
+- Use document.querySelector() and classList.contains('js-button’)
+to check if this button has the class 'js-button'.
+- console.log() the result.
+10c.(Solution)
+
+ <button class="test-btn">Test</button>
+    <script>
+      let button = document.querySelector('.test-btn');
+      console.log(button.classList.contains('test-btn'))//remove (.)from this line either you don't get right answer output will come false
+    </script>
+    --------/-----
+    10d.(Question) Create the button on the right. When clicking
+this button, it should turn ON / OFF. Hints:
+
+- When clicking the button, add or remove the class 'is-toggled’, and use it to change the styling.
+- Use if (classList.contains('is-toggled')) to decide whether to add or remove the 'is-toggled' class.
+10d.(Solution)
+
+HTML Part
+
+<button class="switch-btn" onclick="
+    let button = document.querySelector('.switch-btn')
+      if(!button.classList.contains('is-toggled')){
+        button.classList.add('is-toggled');
+      }else{
+        button.classList.remove('is-toggled');
+      }
+      ">Switch button</button>
+
+      CSS Part
+
+      *{
+    margin: 0;
+    padding: 0;
+}
+.switch-btn{
+    background-color: white;
+    border-radius: 43px;
+    padding: 15px;
+    margin: 23px;
+}
+.is-toggled{
+    background-color: rgb(255, 139, 67);
+    color: whitesmoke;
+    box-shadow: 30px 10px 10px 20px rgb(48, 48, 48);
+    border: none;
+}
+-----/-----
+10e.(Question) Create the button on the right. When clicking this button, it should turn ON / OFF. Hints:
+
+- When clicking the button, add or remove the class 'is-toggled’, and use it to change the styling.
+- Use if (classList.contains('is-toggled')) to decide whether to add or remove the 'is-toggled' class.
+10e.(Solution)
+
+HTML Part
+
+ <button class="btn1" onclick="
+    let button1 = document.querySelector('.btn1')
+    if(!button1.classList.contains('is-toggled1')){
+        button1.classList.add('is-toggled1')
+    }else{
+        button1.classList.remove('is-toggled1')
+    }
+        ">Happy coding</button>
+    <button class="btn2" onclick="
+     let button2 = document.querySelector('.btn2')
+     if(!button2.classList.contains('is-toggled2')){
+        button2.classList.add('is-toggled2')
+     }else{
+        button2.classList.remove('is-toggled2')
+     }
+    "> love to code</button>
+    <button class="btn3" onclick="
+     let button3 = document.querySelector('.btn3')
+     if(!button3.classList.contains('is-toggled3')){
+        button3.classList.add('is-toggled3')
+     }else{button3.classList.remove('is-toggled3')}
+    ">practice coding</button>
+
+    CSS Part
+
+    *{margin: 0;
+padding: 0;
+}
+button{
+    background-color: whitesmoke;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 10px;
+    border: navajowhite;
+}
+.is-toggled1{
+    background-color: yellow;
+    color: black;
+    font-size: large;
+    font-weight: 600;
+    font-style: oblique;
+}
+.is-toggled2{
+    background-color: lightcoral;
+    color: black;
+    font-size: large;
+    font-weight: 600;
+    font-style: normal;
+}
+.is-toggled3{
+    background-color: darkcyan;
+    color: black;
+    font-size: large;
+    font-weight: 600;
+    font-style: initial;}
+    -----/-----
+    10f.(Question) Continuing from 10e, use a function to reuse the code, and separate
+each language into its own file (if you didn't do this already).
+10f.(Solution)
+
+HTML Part
+    <button class="btn1" onclick="
+   switchButton('.btn1')
+        ">Happy coding</button>
+    <button class="btn2" onclick="
+     switchButton('.btn2')
+    "> love to code</button>
+    <button class="btn3" onclick="
+     switchButton('.btn3')
+    ">practice coding</button>
+
+    CSS Part
+
+    *{margin: 0;
+padding: 0;
+}
+button{
+    background-color: whitesmoke;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 10px;
+    border: navajowhite;
+}
+.is-toggled{
+    background-color: yellow;
+    color: black;
+    font-size: large;
+    font-weight: 600;
+    font-style: oblique;}
+
+    Javascript part
+
+      <script>
+        function switchButton(selector){
+            let button1 = document.querySelector(selector)
+    if(!button1.classList.contains('is-toggled')){
+        button1.classList.add('is-toggled')
+    }else{
+        button1.classList.remove('is-toggled')
+
+        }}
+    </script>
+    -----/---
+    10g.(Question) Modify 10f so that only 1 button can be ON at a time.
+    10g.(Solution)
+    HTML Part
+    
+     <button class="btn1" onclick="
+    switchButton('.btn1')
+        ">HTML</button>
+    <button class="btn2" onclick="
+    switchButton('.btn2')
+    ">CSS</button>
+    <button class="btn3" onclick="
+    switchButton('.btn3')
+    ">Javascript</button>
+
+    CSS Part
+    *{margin: 0;
+padding: 0;
+}
+button{
+    background-color: whitesmoke;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 10px;
+    border: navajowhite;
+}
+.is-toggled{
+    background-color: green;
+    color: black;
+    font-size: large;
+    font-weight: 600;
+    font-style: oblique;
+}
+Javscript part
+
+  <script>
+        function switchButton(selector){
+            let button = document.querySelector(selector);
+            if(!button.classList.contains('is-toggled')){
+
+                turnoffPreviousbutton()
+
+                button.classList.add('is-toggled')
+            }else{
+                button.classList.remove('is-toggled')
+            }
+        }
+        function turnoffPreviousbutton(){
+            let previousButton = document.querySelector('.is-toggled')
+            if(previousButton){
+                previousButton.classList.remove('is-toggled')
+            }
+            }  
+    </script>
+    ----/---
+    10h.(Question) Create a file 10h.html and copy the code from 10-dom-projects.htmil.
+In the Amazon Shipping Calculator, if we type a number less than 0,
+display a red error message below the text box:
+10h.(Solution)
+HTML Part
+
+ <input class="input-Number" type="text" placeholder="type your Number">
+    <button class="btn"  onclick="
+    errorMesage();
+    ">Calculate</button>
+    <p class="message"></p>
+
+    CSS Part
+
+    *{margin: 0;
+    padding: 0;
+    }
+    
+.btn{
+    background-color: dodgerblue;
+    border-radius: 10px;
+    margin: 5px;
+    padding: 7px;
+}
+.input-Number{
+border: 2px solid gold;
+border-radius: 6px;
+padding: 5px;
+margin: 6px;
+}
+.message{
+    color: red;
+    font-size:medium;
+    font-weight: 500;
+}
+
+Javascript Part
+
+ <script>
+        function errorMesage(){
+        let inputElement = document.querySelector('.input-Number')
+         let inputValue = inputElement.value
+
+         if(inputValue < 0){
+             let errorItem = document.querySelector('.message');
+             errorItem.innerHTML = "Error: Cost Can't be less than ₹0"
+         }}
+    </script>
+
